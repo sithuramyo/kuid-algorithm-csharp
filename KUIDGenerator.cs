@@ -23,6 +23,11 @@ namespace UniqueIdAlgorithms
 
         // Simple counter for demonstration
         private int uniqueIdCounter = 0;
+
+
+        //Twepoch value is used as a starting timestamp.
+        //The purpose of setting a starting timestamp is to ensure that the generated unique IDs have a relatively large value,
+        //preventing conflicts with previously generated IDs
         private const long Twepoch = 99999L;
 
         public int GenerateKuid()
